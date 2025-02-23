@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(235, 217, 194);
+    display: flex;
+    min-height: 100px;
+    margin-bottom: 20px;
+    font-family: Bell-MT;
+    
+}
+.centro{
+    flex-direction: column;
+    display: flex;
+    box-shadow: 0 0 15px rgba(red, green, blue, alpha);
+    border: red;
+    border-radius: 14px;
+    width: 450px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(243, 224, 183);
+}
+form{
+    align-items: center;
+    margin: 50px 375px;
+    width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color:rgb(250, 238, 222);
+}
+:focus{
+    border: 2px blue
+}
+input{
+    padding: 15px 15px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    background-color: rgb(210, 253, 239);
+}
+.send{
+    font-family: Bell-MT;
+    background-color: antiquewhite;
+
+}
