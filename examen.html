@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen-validacion de datos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form autocomplete="off" action="enviado.html" method="post">
-        <div class="centro">
+    <form autocomplete="off"  method="post" id="formulario">
+        <div class="card">
+            <h1>Validador de Cédula Ecuatoriana</h1>
             <input type="text" id="name" placeholder="Ingrese su nombre" maxlength="20">
-            <input type="tel" id="cedula" placeholder="Ingrese su # de cédula" maxlength="10">
+                <div class="input-wrapper">    
+                    <input type="tel" id="cedula" placeholder="Ingrese su # de cédula" maxlength="10">
+                    <div class="icon" id="icon"></div>
+                </div>
+                <p id="mensaje-validacion" class="mensaje"></p>
+                
+
             <input type="email" id="email" placeholder="Coloque su correo electrónico" maxlength="30">
             <input type="tel" id="phone" placeholder="Ingrese su Número de teléfono" maxlength="10">
-        </div>
-        <div class="centro">
             <input type="submit" value="Guardar" id="send">
         </div>
     </form>
-    
+    <script src="val.js"></script>
 </body>
 </html>
