@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
 <body>
     <form autocomplete="off"  method="post" id="formulario">
         <div class="card">
-            <h1>Validador de Cédula Ecuatoriana</h1>
+            <h1>Formulario de Registro</h1>
             <input type="text" id="name" placeholder="Ingrese su nombre" maxlength="20" required>
                 <div class="input-wrapper">    
                     <input type="tel" id="cedula" placeholder="Ingrese su número de cédula" maxlength="10" required>
@@ -20,7 +21,7 @@
                 <p id="mensaje-validacion" class="mensaje"></p>
             <input type="email" id="email" placeholder="Coloque su correo electrónico" maxlength="30" required>
             <input type="tel" id="phone" placeholder="Ingrese su Número de teléfono" maxlength="10" required>
-            <input type="text" id="fnac" maxlength="10" placeholder="dd/mm/aaaa" required>
+            <input type="text" id="fnac" maxlength="10" placeholder="Fecha de nacimiento(dd/mm/aaaa)" required>
             <div >
                 <p id="mensaje-edad"></p>
             </div>
@@ -33,10 +34,10 @@
             <input type="submit" value="Guardar" id="send" onclick="calcularEdad();">
         </div>
     </form>
-    <script src="val.js"></script>
+    <script src="in proceed.js"></script>
     <script src="contraseña.js"></script>
-    <script src="new.js"></script>
+    <!--<script src="new.js"></script>
     <script src="calc_edad.js"></script>
-    
+-->
 </body>
 </html>
