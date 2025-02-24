@@ -41,6 +41,6 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const cedula = document.getElementById('cedula').value;
     if (!validarCedula(cedula)) {
         event.preventDefault();
-        alert('Por favor, ingrese una cédula ecuatoriana válida.');
+        alert('Por favor, ingrese una cédula válida.');
     }
 });

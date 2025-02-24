@@ -66,7 +66,7 @@ form.addEventListener('submit', function(e) {
     const cedula = input.value;
     
     if (!validarCedula(cedula)) {
-        alert('Por favor, ingrese una cédula ecuatoriana válida.');
+        alert('Por favor, ingrese una cédula válida.');
         return;
     }
     

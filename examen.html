@@ -6,24 +6,37 @@
     <title>Examen-validacion de datos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="edad.css">
 </head>
 <body>
     <form autocomplete="off"  method="post" id="formulario">
         <div class="card">
             <h1>Validador de Cédula Ecuatoriana</h1>
-            <input type="text" id="name" placeholder="Ingrese su nombre" maxlength="20">
+            <input type="text" id="name" placeholder="Ingrese su nombre" maxlength="20" required>
                 <div class="input-wrapper">    
-                    <input type="tel" id="cedula" placeholder="Ingrese su # de cédula" maxlength="10">
+                    <input type="tel" id="cedula" placeholder="Ingrese su número de cédula" maxlength="10" required>
                     <div class="icon" id="icon"></div>
                 </div>
                 <p id="mensaje-validacion" class="mensaje"></p>
-                
-
-            <input type="email" id="email" placeholder="Coloque su correo electrónico" maxlength="30">
-            <input type="tel" id="phone" placeholder="Ingrese su Número de teléfono" maxlength="10">
-            <input type="submit" value="Guardar" id="send">
+            <input type="email" id="email" placeholder="Coloque su correo electrónico" maxlength="30" required>
+            <input type="tel" id="phone" placeholder="Ingrese su Número de teléfono" maxlength="10" required>
+            <input type="text" id="fnac" maxlength="10" placeholder="dd/mm/aaaa" required>
+            <div >
+                <p id="mensaje-edad"></p>
+            </div>
+            <div class="contr">
+                <input type="password"  id="contrasena" placeholder="Ingrese su contraseña" required>
+                <input type="password"  id="contrasena2" placeholder="Confirme su contraseña" required>
+                <div class="icon_2" id="icon_2"></div>
+            </div>
+            <p id="mensaje-validacion_2" class="mensaje_2"></p>
+            <input type="submit" value="Guardar" id="send" onclick="calcularEdad();">
         </div>
     </form>
     <script src="val.js"></script>
+    <script src="contraseña.js"></script>
+    <script src="new.js"></script>
+    <script src="calc_edad.js"></script>
+    
 </body>
 </html>
